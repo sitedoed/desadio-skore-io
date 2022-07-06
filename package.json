@@ -8,8 +8,15 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@vue/apollo-option": "^4.0.0-alpha.18",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "graphql": "^16.5.0",
+    "graphql-tag": "^2.12.6",
+    "react": "^18.2.0",
+    "vue-router": "^4.1.0",
+    "vue3-youtube": "^0.1.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
