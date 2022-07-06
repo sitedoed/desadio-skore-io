@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <section>
-            <h2>Lista de conteúdos</h2>
+            <h2>{{ page }}</h2>
             <article
                 v-for="item in contents"
                 :key="item.id"
@@ -29,6 +29,11 @@ import gql from 'graphql-tag'
 
 export default {
     name: "ListaVue",
+      data: function() {
+            return {
+            page: "Lista de Conteúdos"
+            };
+        },
         apollo: {
         contents: gql `
         query contents {
