@@ -16,6 +16,15 @@
 
 - npm run serve
 
-- Opcional: npm run build
+- acesse a aplicação em: 
+
+- http://localhost:8080/
+
+
+### Testes
+npm run test: 
+
+Opcional
+- npm run test: <nome da view ou componente>
 
 ---

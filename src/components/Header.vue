@@ -12,7 +12,7 @@
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/lista_completa">Lista Completa</router-link></li>   
                     <li><router-link to="/desafio">Sobre o Desafio</router-link></li>      
-                    <li><a href="https://skoreio-challenge.netlify.app/" target="_blank" rel="noopener">Online Demo</a></li>
+                    <li><a href="https://desafio-skore-io.netlify.app/" target="_blank" rel="noopener">Online Demo</a></li>
                 </ul>
             </div>
         </nav>
