@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ListaCompletaVue Component Está carregando a lista? 1`] = `
+<div
+  class="wrapper"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="item"
+    >
+      <section>
+        <h1>
+          Lista Completa
+        </h1>
+        <p>
+          Lista simples de contéudos, com seus respectivos campos, para referência. Os campos "vazios" não têm valor cadastrado, como pode ser observado non link: 
+          <strong>
+            Saiba mais
+          </strong>
+           de cada conteúdo. 
+        </p>
+        <br />
+      </section>
+      <section>
+        
+        
+      </section>
+    </div>
+  </div>
+</div>
+`;

@@ -2,15 +2,15 @@
     <header id="top">
         <nav class="container">
             <a href="/">
-                <img id="logo" src="../assets/img/logos-1.webp" alt="logo"/>
+                <img id="logo" src="img/logos-1.webp" alt="logo"/>
             </a>
-            <img v-on:click="openMenu" alt="Expandir Menu" id="menu-button" src="../assets/img/toogle-btn.png"/>
+            <img v-on:click="openMenu" alt="Expandir Menu" id="menu-button" src="img/toogle-btn.png"/>
             
             <div id="menu-overlay" v-on:click="closeMenu" v-if="menuActive"></div>
             <div id="menu-items" :class="{active:menuActive}">
                 <ul>
                     <li><router-link to="/">Home</router-link></li>
-                    <li><router-link to="/lista_de_conteudos">Lista de Conteúdos</router-link></li>   
+                    <li><router-link to="/lista_completa">Lista Completa</router-link></li>   
                     <li><router-link to="/desafio">Sobre o Desafio</router-link></li>      
                     <li><a href="https://skoreio-challenge.netlify.app/" target="_blank" rel="noopener">Online Demo</a></li>
                 </ul>

@@ -3,18 +3,18 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from './views/Home.vue';
 import DesafioVue from './views/Desafio.vue';
 import SaibamaisVue from './views/Saibamais.vue'
-import ListaConteudosVue from './views/ListaConteudos.vue'
+import ListaCompletaVue from './views/ListaCompleta.vue'
 
 const routes = [
     {
         path: '/',
         name: 'home',
         component: Home
-    },
+    },    
     {
-        path: '/lista_de_conteudos',
-        name: 'lista_de_conteudos',
-        component: ListaConteudosVue
+        path: '/lista_completa',
+        name: 'lista_completa',
+        component: ListaCompletaVue
     },  
     {
         path: '/desafio',

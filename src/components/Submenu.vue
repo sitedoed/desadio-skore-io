@@ -1,4 +1,8 @@
 <template>
+    <div>
+        <h3>Lista Simples</h3>
+        <br />
+    </div>
     <div
         v-for="item in contents"
         :key="item.id"

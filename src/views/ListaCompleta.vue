@@ -3,10 +3,11 @@
         <div class="container">
             <div class="item">
                 <section>
-                    <h2>Lista de conteúdos</h2>
+                    <h1>{{ page_title }}</h1>
                     <p>Lista simples de contéudos, com seus respectivos campos, para referência.
-                        Os campos "vazios" não têm valor cadastrado, como pode ser observado em :
-                        <strong>Saiba mais</strong> 
+                        Os campos "vazios" não têm valor cadastrado, como pode ser observado non link:
+                        <strong>Saiba mais</strong>
+                        de cada conteúdo. 
                     </p>
                     <br />
                 </section>
@@ -21,14 +22,14 @@
                         <p><strong>Descrição: </strong> {{ item.description }}</p>
                         <ul>
                             <li><strong>Tipo: </strong> {{ item.type }}</li>
-                            <li><strong>Url:</strong> {{ item.url }}</li>
+                            <li class="hide"><strong>Url:</strong> {{ item.url }}</li>
                             <li><strong>Embeddable:</strong> {{ item.embeddable }}</li>
                             <li><strong>Download:</strong> {{ item.allow_download }}</li>
                             <li><strong>Data de criação:</strong> {{ item.created_at }}</li>
                             <li><strong>Última atualização:</strong> {{ item.updated_at }}</li>
+                            <li><router-link :to="`/saiba_mais/${item.id}`"><span class="saiba-mais">Saiba mais</span></router-link></li>
                         </ul>
                         </div>
-                        <li><router-link :to="`/saiba_mais/${item.id}`"><span class="saiba-mais">Saiba mais</span></router-link></li>
                     </article>
                 </section>
             
@@ -42,23 +43,28 @@ import gql from 'graphql-tag'
 import '../assets/css/main.css'
 
 export default {
-    name: "ListaConteudosVue",
-        apollo: {
-        contents: gql `
-        query contents {
-          contents {
-            id
-            title
-            description
-            type
-            url
-            embeddable
-            allow_download
-            created_at
-            updated_at
-          }
+    name: "ListaCompletaVue",
+    data: function() {
+        return {
+        page_title: "Lista Completa"
+        };
+    },
+    apollo: {
+    contents: gql `
+    query contents {
+        contents {
+        id
+        title
+        description
+        type
+        url
+        embeddable
+        allow_download
+        created_at
+        updated_at
         }
-      `,
+    }
+    `,
     },
 }
 </script>
@@ -67,5 +73,4 @@ export default {
 .bold{
     font-weight:bold ;
 }
-
 </style>

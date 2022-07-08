@@ -2,27 +2,49 @@
   <div class="wrapper">
     <div class="container">
         <div class="item">
-          <h1 class="">Desafio de FrontEnd Skore-io</h1>
+          <h1 class="">Home - {{ page_title }}</h1>
+          <section>
+            <article>
+              <h2>Bem-vindos ao Desafio de FrontEnd Skore</h2>
+              <br />
+              <h3>O desafio consiste no desenvolvimento de um projeto, responsivo, em Nuxt.js que atenda os seguintes requisitos:</h3>
+              <br />
+              <ul>
+                <li>Ter uma página que liste conteúdos;</li>
+                <li>Ter uma página que mostre os detalhes de um conteúdo buscando-o através do seu id;</li>
+              </ul>
+              <br />
+              <br />
+              <h3>Principais tecnologias utilizadas na Skore:</h3>
+              <br />
+              <ul>
+                <li>Nuxt.js;</li>
+                <li>Jest e Vue Test Utils;</li>
+                <li> SCSS;</li>
+                <li>GraphQL;</li>
+                <li>GitHub Actions;</li>
+              </ul>
+            </article>
+          </section>
           <Submenu />
-          <br />
-          <br />
-          <Table />
         </div>
     </div>
   </div>
 </template>
 
 <script>
-import Table from '../components/Table.vue'
 import Submenu from '@/components/Submenu.vue'
 
 export default {
     name: "HomeVue",
-    components: { Table, Submenu }
+    data () {
+      return {
+        page_title: "Página Inicial"
+      }
+    },
+    components: { Submenu }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .saiba-mais{
  font-size: large;
