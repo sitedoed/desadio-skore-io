@@ -8,7 +8,7 @@
 ## Instruções
 - Clone o repositório: git clone https://github.com/sitedoed/skore-io-challenge.git
 
-- Entre no diretório <project_folder>
+- Entre no diretório: desafio-skore-io
 
 - No diretório do projeto, digite:
 
@@ -22,7 +22,7 @@
 
 
 ### Testes
-npm run test: 
+npm run test: unit
 
 Opcional
 - npm run test: <nome da view ou componente>
