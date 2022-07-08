@@ -29,3 +29,6 @@ Opcional
 - npm run test: nome da view ou do componente
 
 ---
+
+### [Demo](https://desafio-skore-io.netlify.app/) 
+https://desafio-skore-io.netlify.app/
