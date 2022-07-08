@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import DesafioVue from './views/Desafio.vue';
 import SaibamaisVue from './views/Saibamais.vue'
 import ListaCompletaVue from './views/ListaCompleta.vue'
+import NotFoundVue from "./components/NotFound.vue";
 
 const routes = [
     {
@@ -30,8 +31,14 @@ const routes = [
         path: '/saiba_mais/:id',
         name: 'saiba_mais/:id',
         component: SaibamaisVue
-    }          
-
+    },
+    {   path: '/404',
+        name: 'NotFound',
+        component: NotFoundVue 
+    },  
+    {   path: '/:pathMatch(.*)*', 
+        redirect: '/404' 
+    }      
 ];
 
 const router = createRouter({
