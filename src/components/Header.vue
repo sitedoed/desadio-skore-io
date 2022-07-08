@@ -2,9 +2,9 @@
     <header id="top">
         <nav class="container">
             <a href="/">
-                <img id="logo" src="img/logos-1.webp" alt="logo"/>
+                <img id="logo" src="/img/logos-1.webp" alt="logo"/>
             </a>
-            <img v-on:click="openMenu" alt="Expandir Menu" id="menu-button" src="img/toogle-btn.png"/>
+            <img v-on:click="openMenu" alt="Expandir Menu" id="menu-button" src="/img/toogle-btn.png"/>
             
             <div id="menu-overlay" v-on:click="closeMenu" v-if="menuActive"></div>
             <div id="menu-items" :class="{active:menuActive}">
@@ -71,6 +71,7 @@ export default {
         height: 100vh;
         background-color: #0099;
         opacity: 0.8;
+        z-index: 99;
     }
     #menu-logo{
         width: 110px;

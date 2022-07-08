@@ -1,24 +1,21 @@
-# desafio-skore-io
+# Desafio FrontEnd Skore.io
 
-## Project setup
-```
-npm install
-```
+**Um Projeto Vuejs 👍**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![](https://github.com/sitedoed/skore-io-challenge/blob/master/assets/img/skore-io.png?raw=true)
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Instruções
+- Clone o repositório: git clone https://github.com/sitedoed/skore-io-challenge.git
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Entre no diretório <project_folder>
+
+- No diretório do projeto, digite:
+
+- npm install
+
+- npm run serve
+
+- Opcional: npm run build
+
+---
