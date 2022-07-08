@@ -20,11 +20,12 @@
 
 - http://localhost:8080/
 
+---
 
 ### Testes
 npm run test: unit
 
 Opcional
-- npm run test: <nome da view ou componente>
+- npm run test: nome da view ou do componente
 
 ---
