@@ -2,7 +2,7 @@
 
 **Um Projeto Vuejs 👍**
 
-![](https://github.com/sitedoed/skore-io-challenge/blob/master/assets/img/skore-io.png?raw=true)
+![](https://github.com/sitedoed/desafio-skore-io/blob/master/public/img/skore-io1.png?raw=true)
 
 
 ## Instruções
