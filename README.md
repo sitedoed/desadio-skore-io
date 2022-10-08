@@ -14,7 +14,7 @@
 
 - npm install
 
-- npm run dev
+- npm run start
 
 - acesse a aplicação em: 
 
