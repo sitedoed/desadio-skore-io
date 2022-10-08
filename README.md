@@ -6,7 +6,7 @@
 
 
 ## Instruções
-- Clone o repositório: git clone https://github.com/sitedoed/skore-io-challenge.git
+- Clone o repositório: git clone https://github.com/sitedoed/desafio-skore-io.git
 
 - Entre no diretório: desafio-skore-io
 
@@ -14,7 +14,7 @@
 
 - npm install
 
-- npm run serve
+- npm run dev
 
 - acesse a aplicação em: 
 
